@@ -13,10 +13,10 @@ class OpeningPage extends StatelessWidget {
             'assets/opening_image.jpeg',
             fit: BoxFit.cover,
           ),
-          SizedBox(
+          const SizedBox(
             height: 80,
           ),
-          Text(
+          const Text(
             'Find your dream home!!',
             textAlign: TextAlign.left,
             style: TextStyle(
@@ -25,7 +25,7 @@ class OpeningPage extends StatelessWidget {
                 fontSize: 40,
                 fontStyle: FontStyle.italic),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Column(
@@ -43,7 +43,7 @@ class OpeningPage extends StatelessWidget {
                   )),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 50,
           )
         ],

@@ -38,13 +38,13 @@ class ExplorePage extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Expanded(
             child: Column(
               children: [
-                Text(
+                const Text(
                   'Ready to explore?',
                   textAlign: TextAlign.start,
                   style: TextStyle(
@@ -53,7 +53,7 @@ class ExplorePage extends StatelessWidget {
                       fontSize: 30,
                       fontStyle: FontStyle.italic),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 100,
                 ),
                 SizedBox(
@@ -70,10 +70,10 @@ class ExplorePage extends StatelessWidget {
                           height: 30,
                           width: 30,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
-                        Text(
+                        const Text(
                           'Continue with google',
                           style: TextStyle(fontSize: 20),
                         ),
@@ -81,7 +81,7 @@ class ExplorePage extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 SizedBox(
@@ -98,7 +98,7 @@ class ExplorePage extends StatelessWidget {
                           height: 33,
                           width: 33,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         const Text(
@@ -109,10 +109,10 @@ class ExplorePage extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
-                Text(
+                const Text(
                   'Dont have an account? Signup',
                   style: TextStyle(fontSize: 20),
                 ),

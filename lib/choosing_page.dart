@@ -22,7 +22,7 @@ class _ChoosingPageState extends State<ChoosingPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     'dwellio',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -31,7 +31,7 @@ class _ChoosingPageState extends State<ChoosingPage> {
                         fontSize: 30,
                         fontStyle: FontStyle.italic),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 100,
                   ),
                   CustomListTile(
@@ -46,7 +46,7 @@ class _ChoosingPageState extends State<ChoosingPage> {
                       }
                     },
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   CustomListTile(
@@ -61,7 +61,7 @@ class _ChoosingPageState extends State<ChoosingPage> {
                       }
                     },
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   CustomListTile(
@@ -76,7 +76,7 @@ class _ChoosingPageState extends State<ChoosingPage> {
                       }
                     },
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   CustomListTile(
@@ -91,17 +91,18 @@ class _ChoosingPageState extends State<ChoosingPage> {
                       }
                     },
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 100,
                   ),
                   SizedBox(
                     width: 300,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          backgroundColor: Color.fromARGB(255, 106, 149, 184),
+                          backgroundColor:
+                              const Color.fromARGB(255, 106, 149, 184),
                           foregroundColor: Colors.white),
                       onPressed: () {},
                       child: const Text(
@@ -145,13 +146,13 @@ class CustomListTile extends StatelessWidget {
             height: 70,
             width: 70,
           ),
-          SizedBox(
+          const SizedBox(
             width: 20,
           ),
           Expanded(
             child: Text(
               label,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 20,
                 color: Color.fromARGB(255, 106, 149, 184),
               ),
@@ -159,7 +160,7 @@ class CustomListTile extends StatelessWidget {
           ),
           Checkbox(
             checkColor: Colors.white,
-            activeColor: Color.fromARGB(255, 106, 149, 184),
+            activeColor: const Color.fromARGB(255, 106, 149, 184),
             value: isChecked,
             onChanged: onTap,
           ),

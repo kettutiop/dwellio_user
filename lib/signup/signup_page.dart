@@ -22,7 +22,7 @@ class _SignupPageState extends State<SignupPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Center(
+                  const Center(
                     child: Text(
                       'dwellio',
                       textAlign: TextAlign.center,
@@ -33,35 +33,35 @@ class _SignupPageState extends State<SignupPage> {
                           fontStyle: FontStyle.italic),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 100,
                   ),
-                  Text('Create your account',
+                  const Text('Create your account',
                       style: TextStyle(
                           color: Color.fromARGB(255, 106, 149, 184),
                           fontSize: 30)),
-                  SizedBox(
+                  const SizedBox(
                     height: 50,
                   ),
-                  Text(
+                  const Text(
                     'Email',
                     style: TextStyle(color: Colors.grey, fontSize: 15),
                   ),
-                  TextField(
+                  const TextField(
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.zero,
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
-                  Text(
+                  const Text(
                     'New Password',
                     style: TextStyle(color: Colors.grey, fontSize: 15),
                   ),
-                  TextField(
+                  const TextField(
                     obscureText: true,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
@@ -69,14 +69,14 @@ class _SignupPageState extends State<SignupPage> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
-                  Text(
+                  const Text(
                     'Confirm Password',
                     style: TextStyle(color: Colors.grey, fontSize: 15),
                   ),
-                  TextField(
+                  const TextField(
                     obscureText: true,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
@@ -84,14 +84,14 @@ class _SignupPageState extends State<SignupPage> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Row(
                     children: <Widget>[
                       Checkbox(
                         checkColor: Colors.white,
-                        activeColor: Color.fromARGB(255, 106, 149, 184),
+                        activeColor: const Color.fromARGB(255, 106, 149, 184),
                         value: isChecked,
                         onChanged: (bool? value) {
                           setState(() {
@@ -99,20 +99,21 @@ class _SignupPageState extends State<SignupPage> {
                           });
                         },
                       ),
-                      Text('I agree with the privacy and policy')
+                      const Text('I agree with the privacy and policy')
                     ],
                   ),
                   SizedBox(
                     width: 300,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          backgroundColor: Color.fromARGB(255, 106, 149, 184),
+                          backgroundColor:
+                              const Color.fromARGB(255, 106, 149, 184),
                           foregroundColor: Colors.white),
                       onPressed: () {},
                       child: const Text('SIGNUP'),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   SizedBox(
@@ -129,10 +130,10 @@ class _SignupPageState extends State<SignupPage> {
                             height: 30,
                             width: 30,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 20,
                           ),
-                          Text(
+                          const Text(
                             'Continue with google',
                             style: TextStyle(fontSize: 15),
                           ),
@@ -140,7 +141,7 @@ class _SignupPageState extends State<SignupPage> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   SizedBox(
@@ -157,7 +158,7 @@ class _SignupPageState extends State<SignupPage> {
                             height: 33,
                             width: 33,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 20,
                           ),
                           const Text(

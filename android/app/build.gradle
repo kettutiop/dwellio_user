@@ -25,12 +25,16 @@ if (flutterVersionName == null) {
 
 android {
     namespace = "com.example.dwellio_user"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 34
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
     }
 
     defaultConfig {
@@ -51,8 +55,20 @@ android {
             signingConfig = signingConfigs.debug
         }
     }
+
+    // Add this block to enable view binding or data binding if needed
+    buildFeatures {
+        viewBinding = true // Optional, if you use view binding
+        dataBinding = true // Optional, if you use data binding
+    }
 }
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+    // Add any additional dependencies here
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version" // Ensure Kotlin standard library is included
+    implementation "androidx.core:core-ktx:1.12.0" // Optional, for Kotlin extensions
 }

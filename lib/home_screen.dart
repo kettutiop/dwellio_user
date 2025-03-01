@@ -1,6 +1,4 @@
-import 'package:dwellio_user/buy_page.dart';
 import 'package:dwellio_user/notification_page.dart';
-import 'package:dwellio_user/property_page.dart';
 import 'package:dwellio_user/search_page.dart';
 import 'package:dwellio_user/wishlist_screen.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'dwellio',
           textAlign: TextAlign.center,
           style: TextStyle(
@@ -40,59 +38,62 @@ class _HomeScreenState extends State<HomeScreen>
         ),
       ),
       body: TabBarView(
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
         controller: _tabController,
         children: [
-          BuySection(),
-          SearchPage(),
-          WishlistScreen(),
-          NotificationPage(),
+          // const BuySection(),
+          const SearchPage(),
+          const WishlistScreen(),
+          const NotificationPage(),
           Container(
             color: Colors.green,
           ),
         ],
       ),
-      bottomNavigationBar: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            NavBarItem(
-              isActive: _tabController.index == 0,
-              icon: Icons.home,
-              onTap: () {
-                _tabController.animateTo(0);
-              },
-            ),
-            NavBarItem(
-              isActive: _tabController.index == 1,
-              icon: Icons.search,
-              onTap: () {
-                _tabController.animateTo(1);
-              },
-            ),
-            NavBarItem(
-              isActive: _tabController.index == 2,
-              icon: Icons.favorite,
-              onTap: () {
-                _tabController.animateTo(2);
-              },
-            ),
-            NavBarItem(
-              isActive: _tabController.index == 3,
-              icon: Icons.notifications,
-              onTap: () {
-                _tabController.animateTo(3);
-              },
-            ),
-            NavBarItem(
-              isActive: _tabController.index == 4,
-              icon: Icons.person,
-              onTap: () {
-                _tabController.animateTo(4);
-              },
-            ),
-          ],
+      bottomNavigationBar: Material(
+        color: Colors.black,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              NavBarItem(
+                isActive: _tabController.index == 0,
+                icon: Icons.home,
+                onTap: () {
+                  _tabController.animateTo(0);
+                },
+              ),
+              NavBarItem(
+                isActive: _tabController.index == 1,
+                icon: Icons.search,
+                onTap: () {
+                  _tabController.animateTo(1);
+                },
+              ),
+              NavBarItem(
+                isActive: _tabController.index == 2,
+                icon: Icons.favorite,
+                onTap: () {
+                  _tabController.animateTo(2);
+                },
+              ),
+              NavBarItem(
+                isActive: _tabController.index == 3,
+                icon: Icons.notifications,
+                onTap: () {
+                  _tabController.animateTo(3);
+                },
+              ),
+              NavBarItem(
+                isActive: _tabController.index == 4,
+                icon: Icons.person,
+                onTap: () {
+                  _tabController.animateTo(4);
+                },
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -119,7 +120,7 @@ class NavBarItem extends StatelessWidget {
         children: [
           Icon(
             icon,
-            color: isActive ? Colors.blue : Colors.black,
+            color: isActive ? Colors.blue : Colors.white,
             size: 35,
           ),
         ],

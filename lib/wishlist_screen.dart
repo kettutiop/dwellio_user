@@ -8,16 +8,16 @@ class WishlistScreen extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(
+        const Text(
           'Houses',
           textAlign: TextAlign.left,
           style: TextStyle(color: Colors.blue, fontSize: 30),
         ),
         Expanded(
           child: ListView.separated(
-            padding: EdgeInsets.all(20),
-            itemBuilder: (context, index) => CustomCard(),
-            separatorBuilder: (context, index) => SizedBox(
+            padding: const EdgeInsets.all(20),
+            itemBuilder: (context, index) => const CustomCard(),
+            separatorBuilder: (context, index) => const SizedBox(
               height: 20,
             ),
             itemCount: 5,
@@ -46,7 +46,7 @@ class _CustomCardState extends State<CustomCard> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         ClipRRect(
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(20), topRight: Radius.circular(20)),
           child: Image.asset(
             'assets/home1.jpeg',
@@ -58,7 +58,7 @@ class _CustomCardState extends State<CustomCard> {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Laurels',
               textAlign: TextAlign.start,
               style: TextStyle(
@@ -68,16 +68,16 @@ class _CustomCardState extends State<CustomCard> {
             ),
             Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.location_on,
                   color: Colors.black,
                   size: 20,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
-                Text('Taliparamba,Kannur'),
-                Spacer(),
+                const Text('Taliparamba,Kannur'),
+                const Spacer(),
                 IconButton(
                   onPressed: () {
                     isActive = !isActive;

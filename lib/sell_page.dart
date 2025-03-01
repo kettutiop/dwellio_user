@@ -8,7 +8,7 @@ class BuyPage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text(
+          title: const Text(
             'dwellio',
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -20,13 +20,13 @@ class BuyPage extends StatelessWidget {
         ),
         body: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             TextField(
               decoration: InputDecoration(
                 hintText: "Search",
-                prefixIcon: Icon(
+                prefixIcon: const Icon(
                   Icons.search,
                   color: Colors.black,
                   size: 30,

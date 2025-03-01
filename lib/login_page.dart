@@ -15,7 +15,7 @@ class LoginPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Center(
+                  const Center(
                     child: Text(
                       'dwellio',
                       textAlign: TextAlign.center,
@@ -26,35 +26,35 @@ class LoginPage extends StatelessWidget {
                           fontStyle: FontStyle.italic),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 100,
                   ),
-                  Text('Login to your account',
+                  const Text('Login to your account',
                       style: TextStyle(
                           color: Color.fromARGB(255, 106, 149, 184),
                           fontSize: 30)),
-                  SizedBox(
+                  const SizedBox(
                     height: 50,
                   ),
-                  Text(
+                  const Text(
                     'Email',
                     style: TextStyle(color: Colors.grey, fontSize: 15),
                   ),
-                  TextField(
+                  const TextField(
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.zero,
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
-                  Text(
+                  const Text(
                     'Password',
                     style: TextStyle(color: Colors.grey, fontSize: 15),
                   ),
-                  TextField(
+                  const TextField(
                     obscureText: true,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
@@ -62,20 +62,21 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   SizedBox(
                     width: 300,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          backgroundColor: Color.fromARGB(255, 106, 149, 184),
+                          backgroundColor:
+                              const Color.fromARGB(255, 106, 149, 184),
                           foregroundColor: Colors.white),
                       onPressed: () {},
                       child: const Text('LOGIN'),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   SizedBox(
@@ -92,10 +93,10 @@ class LoginPage extends StatelessWidget {
                             height: 30,
                             width: 30,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 20,
                           ),
-                          Text(
+                          const Text(
                             'Continue with google',
                             style: TextStyle(fontSize: 15),
                           ),
@@ -103,7 +104,7 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   SizedBox(
@@ -120,7 +121,7 @@ class LoginPage extends StatelessWidget {
                             height: 33,
                             width: 33,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 20,
                           ),
                           const Text(
@@ -131,7 +132,7 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Center(
