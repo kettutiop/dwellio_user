@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-const Color backgroundColor = Color(0xFFFFFFFF);
+const Color backgroundColor = Color(0xFFF4F6F8);
 const Color titleColor = Color(0xFF353535);
-const Color textColor = Color(0xFF353535);
+const Color textColor = Color(0xFF313131);
 const Color mutedIconColor = Color(0xFFA1A1A1);
 const Color mutedTextColor = Color(0xFF919191);
 const Color inputBackgroundColor = Color(0xFFF1F1F1);
 const Color cardBackgroundColor = Color(0xFFF0F0F0);
 const Color cardBorderColor = Color(0xFFD8D8D8);
 const Color cardFocusBorderColor = Color.fromARGB(255, 203, 203, 203);
-const Color iconColor = Color(0xFF566273);
+const Color iconColor = Color(0xFF515866);
 // Primary color (Blue): Used for key interactive elements like buttons, links, and selected states
-const Color primaryColor = Color(0xffFF7C07);
-const Color secondaryColor = Color(0xFF4EB429);
+const Color primaryColor = Color(0xFFa31621);
+const Color secondaryColor = Color(0xFFfcf7f8);
 
 // Tertiary color (Gray): Used for less important UI elements like disabled states or subtle details
 const tertiaryColor = Color(0xFFF0F0F0);
@@ -27,18 +27,23 @@ const surfaceColor = Color(0xFFFFFFFF);
 const errorColor = Color(0xFFB00020);
 
 // Text colors that contrast with the background colors
-const onprimaryColor =
-    Color(0xFFFFFFFF); // Text color used on primary (blue) color background
-const onSecondaryColor =
-    Color(0xff000000); // Text color used on secondary (black) color background
-const onTertiaryColor =
-    Color(0xFFFFFFFF); // Text color used on tertiary (gray) color background
-const onSurfaceColor =
-    Color(0xFF7A7A7A); // Text color used on surface (white) color
-const onErrorColor =
-    Color(0xFFFFFFFF); // Text color used on error (red) color background
+const onprimaryColor = Color(
+  0xFFFFFFFF,
+); // Text color used on primary (blue) color background
+const onSecondaryColor = Color(
+  0xFF303030,
+); // Text color used on secondary (black) color background
+const onTertiaryColor = Color(
+  0xFFFFFFFF,
+); // Text color used on tertiary (gray) color background
+const onSurfaceColor = Color(
+  0xFF7A7A7A,
+); // Text color used on surface (white) color
+const onErrorColor = Color(
+  0xFFFFFFFF,
+); // Text color used on error (red) color background
 
-const Color outlineColor = Color(0xFFE5E5E5); //border color
+const Color outlineColor = Color(0x55313131); //border color
 const Color onSecondaryContainer = Color(0xFF000000); //text color
 const Color shadowColor = Color.fromARGB(15, 0, 0, 0);
 const Color dividerColor = Color(0xFFE6E6E6);
@@ -49,9 +54,7 @@ ThemeData appTheme = ThemeData(
   scaffoldBackgroundColor: backgroundColor,
   dialogBackgroundColor: backgroundColor,
   dividerColor: dividerColor,
-  dividerTheme: const DividerThemeData(
-    color: dividerColor,
-  ),
+  dividerTheme: const DividerThemeData(color: dividerColor),
   textTheme: const TextTheme(
     labelLarge: TextStyle(color: onSecondaryColor),
     labelMedium: TextStyle(color: onSecondaryColor),
@@ -86,53 +89,35 @@ ThemeData appTheme = ThemeData(
   appBarTheme: const AppBarTheme(
     color: backgroundColor,
     centerTitle: true,
-    iconTheme: IconThemeData(
-      color: iconColor,
-    ),
+    iconTheme: IconThemeData(color: iconColor),
   ),
-  iconTheme: const IconThemeData(
-    color: iconColor,
-  ),
+  iconTheme: const IconThemeData(color: iconColor),
   inputDecorationTheme: InputDecorationTheme(
     isDense: true,
     suffixIconColor: iconColor,
     prefixIconColor: iconColor,
     floatingLabelBehavior: FloatingLabelBehavior.auto,
-    contentPadding: const EdgeInsets.symmetric(
-      vertical: 5,
-      horizontal: 8,
-    ),
+    contentPadding: const EdgeInsets.symmetric(horizontal: 15, vertical: 12),
     fillColor: cardBackgroundColor,
-    filled: true,
     border: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(20),
-      borderSide: const BorderSide(
-        color: cardBorderColor,
-      ),
+      borderRadius: BorderRadius.circular(10),
+      borderSide: const BorderSide(color: cardBorderColor),
     ),
     enabledBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(20),
-      borderSide: const BorderSide(
-        color: cardBorderColor,
-      ),
+      borderRadius: BorderRadius.circular(10),
+      borderSide: const BorderSide(color: cardBorderColor),
     ),
     focusedBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(20),
-      borderSide: const BorderSide(
-        color: cardFocusBorderColor,
-      ),
+      borderRadius: BorderRadius.circular(10),
+      borderSide: const BorderSide(color: cardFocusBorderColor),
     ),
     focusedErrorBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(20),
-      borderSide: BorderSide(
-        color: Colors.red[700]!,
-      ),
+      borderRadius: BorderRadius.circular(10),
+      borderSide: BorderSide(color: Colors.red[700]!),
     ),
     disabledBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(20),
-      borderSide: const BorderSide(
-        color: cardBorderColor,
-      ),
+      borderRadius: BorderRadius.circular(10),
+      borderSide: const BorderSide(color: cardBorderColor),
     ),
   ),
 );

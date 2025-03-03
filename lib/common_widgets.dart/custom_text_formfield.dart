@@ -32,10 +32,7 @@ class CustomTextFormField extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           if (title != null)
-            Text(
-              title!,
-              style: Theme.of(context).textTheme.bodyMedium,
-            ),
+            Text(title!, style: Theme.of(context).textTheme.bodyMedium),
           if (title != null) const SizedBox(height: 5),
           TextFormField(
             controller: controller,
@@ -44,28 +41,28 @@ class CustomTextFormField extends StatelessWidget {
             maxLines: maxLines,
             textInputAction: TextInputAction.next,
             decoration: InputDecoration(
-              contentPadding: contentPadding ??
+              filled: true,
+              fillColor: Colors.white.withOpacity(0.2),
+              contentPadding:
+                  contentPadding ??
                   ((prefixIconData != null || suffixIconData != null)
                       ? null
                       : const EdgeInsets.symmetric(
-                          horizontal: 10,
-                          vertical: 12,
-                        )),
+                        horizontal: 10,
+                        vertical: 12,
+                      )),
               hintText: labelText,
-              suffixIcon: suffixIconData != null
-                  ? Icon(
-                      suffixIconData,
-                    )
-                  : null,
-              prefixIcon: prefixIconData != null
-                  ? Padding(
-                      padding:
-                          EdgeInsets.only(bottom: minLines != null ? 45 : 0),
-                      child: Icon(
-                        prefixIconData,
-                      ),
-                    )
-                  : null,
+              hintStyle: TextStyle(color: Colors.black),
+              suffixIcon: suffixIconData != null ? Icon(suffixIconData) : null,
+              prefixIcon:
+                  prefixIconData != null
+                      ? Padding(
+                        padding: EdgeInsets.only(
+                          bottom: minLines != null ? 45 : 0,
+                        ),
+                        child: Icon(prefixIconData),
+                      )
+                      : null,
             ),
           ),
         ],
