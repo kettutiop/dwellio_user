@@ -1,4 +1,4 @@
-import 'package:dwellio_user/signup/signup_page.dart';
+import 'package:dwellio_user/features/signup/signup_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: const SignupPage(),
+      home: SignupScreen(),
     );
   }
 }

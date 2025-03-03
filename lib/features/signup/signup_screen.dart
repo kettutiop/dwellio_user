@@ -1,8 +1,8 @@
+import 'package:dwellio_user/common_widgets.dart/custom_button.dart';
+import 'package:dwellio_user/common_widgets.dart/custom_text_formfield.dart';
+import 'package:dwellio_user/features/login/login_delliew.dart';
+import 'package:dwellio_user/util/value_validator.dart';
 import 'package:flutter/material.dart';
-import 'package:tester/common_widgets.dart/custom_button.dart';
-import 'package:tester/common_widgets.dart/custom_text_formfield.dart';
-import 'package:tester/features/login/login_delliew.dart';
-import 'package:tester/util/value_validator.dart';
 
 class SignupScreen extends StatelessWidget {
   SignupScreen({super.key});
@@ -30,7 +30,6 @@ class SignupScreen extends StatelessWidget {
               ),
             ),
           ),
-
           Center(
             child: SingleChildScrollView(
               padding: const EdgeInsets.all(20.0),
@@ -67,9 +66,9 @@ class SignupScreen extends StatelessWidget {
                           style: Theme.of(
                             context,
                           ).textTheme.headlineMedium!.copyWith(
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold,
-                          ),
+                                fontSize: 30,
+                                fontWeight: FontWeight.bold,
+                              ),
                         ),
                         SizedBox(height: 20),
                         CustomTextFormField(
@@ -77,7 +76,6 @@ class SignupScreen extends StatelessWidget {
                           controller: _emailController,
                           validator: emailValidator,
                         ),
-
                         const SizedBox(height: 20),
                         CustomTextFormField(
                           labelText: 'Password',
@@ -86,7 +84,6 @@ class SignupScreen extends StatelessWidget {
                           suffixIconData: Icons.visibility_off,
                         ),
                         const SizedBox(height: 20),
-
                         CustomTextFormField(
                           labelText: 'Confirm password',
                           controller: _confirmPassController,
@@ -94,14 +91,12 @@ class SignupScreen extends StatelessWidget {
                           suffixIconData: Icons.visibility_off,
                         ),
                         const SizedBox(height: 20),
-
                         CustomTextFormField(
                           labelText: 'Phone',
                           controller: _phoneController,
                           validator: notEmptyValidator,
                           suffixIconData: Icons.visibility_off,
                         ),
-
                         const SizedBox(height: 5),
                         Align(
                           alignment: Alignment.centerRight,
@@ -110,7 +105,6 @@ class SignupScreen extends StatelessWidget {
                             child: Text('''Already have account! Signin?'''),
                           ),
                         ),
-
                         const SizedBox(height: 10),
                         Align(
                           alignment: Alignment.center,

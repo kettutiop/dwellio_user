@@ -1,8 +1,8 @@
+import 'package:dwellio_user/features/Profile/profile_screen.dart';
+import 'package:dwellio_user/features/Propertie/propertie_screen.dart';
+import 'package:dwellio_user/features/dashboard/dashboard_screen.dart';
+import 'package:dwellio_user/theme/app_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:tester/features/Profile/profile_screen.dart';
-import 'package:tester/features/Propertie/propertie_screen.dart';
-import 'package:tester/features/dashboard/dashboard_screen.dart';
-import 'package:tester/theme/app_theme.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
