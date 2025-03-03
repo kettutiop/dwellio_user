@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tester/common_widgets.dart/custom_button.dart';
-import 'package:tester/common_widgets.dart/custom_text_formfield.dart';
-import 'package:tester/util/value_validator.dart';
+
+import '../../common_widgets.dart/custom_button.dart';
+import '../../common_widgets.dart/custom_text_formfield.dart';
+import '../../util/value_validator.dart';
 
 class LoginScreen extends StatelessWidget {
   LoginScreen({super.key});
@@ -27,7 +28,6 @@ class LoginScreen extends StatelessWidget {
               ),
             ),
           ),
-
           Center(
             child: SingleChildScrollView(
               padding: const EdgeInsets.all(20.0),
@@ -64,9 +64,9 @@ class LoginScreen extends StatelessWidget {
                           style: Theme.of(
                             context,
                           ).textTheme.headlineMedium!.copyWith(
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold,
-                          ),
+                                fontSize: 30,
+                                fontWeight: FontWeight.bold,
+                              ),
                         ),
                         SizedBox(height: 20),
                         CustomTextFormField(
@@ -74,7 +74,6 @@ class LoginScreen extends StatelessWidget {
                           controller: _emailController,
                           validator: emailValidator,
                         ),
-
                         const SizedBox(height: 20),
                         CustomTextFormField(
                           labelText: 'Password',
@@ -82,7 +81,6 @@ class LoginScreen extends StatelessWidget {
                           validator: notEmptyValidator,
                           suffixIconData: Icons.visibility_off,
                         ),
-
                         const SizedBox(height: 5),
                         Align(
                           alignment: Alignment.centerRight,
@@ -91,7 +89,6 @@ class LoginScreen extends StatelessWidget {
                             child: Text('''Don't have account! Signup?'''),
                           ),
                         ),
-
                         const SizedBox(height: 10),
                         Align(
                           alignment: Alignment.center,
